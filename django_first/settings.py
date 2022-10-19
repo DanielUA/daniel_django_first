@@ -12,26 +12,26 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+#  Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "qdjango-insecure-%h!-tv8bs7(hp))tmtvlvf(4107zmb)+7x^j_67f*f4$)lx+1d")
+#  Quick-start development settings - unsuitable for production
+#  See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
+#  SECURITY WARNING: keep the secret key used in production secret!
+#  SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY",
+#  "qdjango-insecure-%h!-tv8bs7(hp))tmtvlvf(4107zmb)+7x^j_67f*f4$)lx+1d")
 SECRET_KEY = ("qdjango-insecure-%h!-tv8bs7(hp))tmtvlvf(4107zmb)+7x^j_67f*f4$)lx+1d")
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True#False(пока идет разработка)
+#  SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True  # False(пока идет разработка, затем меняем на False)
 
 ALLOWED_HOSTS = [
     "*",
 ]
 
 
-# Application definition
+#  Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -75,8 +75,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'django_first.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+#  Database
+#  https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -86,8 +86,8 @@ DATABASES = {
 }
 
 
-# Password validation
-# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
+#  Password validation
+#  https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
