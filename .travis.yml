@@ -1,4 +1,10 @@
 language: python
-rvm:
-- 2.2
-- jrubi
+python:
+- 3.9
+install:
+- pip install -r requirements.txt
+before_script:
+- python mamnage.py migrate
+script:
+- flake8 .
+
