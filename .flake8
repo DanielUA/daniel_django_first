@@ -1,5 +1,7 @@
 [flake8]
 extend-ignore =
-exclude = .git,__pycache__,.venv, migrations
+       #F405
+       F405
+exclude = .git,__pycache__,.venv, venv, migrations
 max-line-length = 120
 max-complexity = 10
