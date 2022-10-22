@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #  SECURITY WARNING: keep the secret key used in production secret!
 #  SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY",
 #  "qdjango-insecure-%h!-tv8bs7(hp))tmtvlvf(4107zmb)+7x^j_67f*f4$)lx+1d")
-SECRET_KEY = ("qdjango-insecure-%h!-tv8bs7(hp))tmtvlvf(4107zmb)+7x^j_67f*f4$)lx+1d")
+SECRET_KEY = "DJANGO_KEY"
 
 #  SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True  # False(пока идет разработка, затем меняем на False)
